@@ -352,6 +352,13 @@ html[data-theme="light"] .header {
   line-height: 1.1;
 }
 
+.hero-title-name {
+  display: block;
+  white-space: nowrap;
+  font-size: clamp(1.35rem, 3.6vw, 2.75rem);
+  margin-bottom: 0.35rem;
+}
+
 .gradient-text {
   background: linear-gradient(115deg, var(--accent), var(--accent-2), var(--accent-3));
   -webkit-background-clip: text;
@@ -379,11 +386,6 @@ html[data-theme="light"] .header {
 .hero__subheading {
   max-width: 62ch;
   color: var(--text-muted);
-}
-
-.hero__name {
-  margin-top: 0.75rem;
-  font-size: clamp(1.2rem, 2.7vw, 1.75rem);
 }
 
 .hero__cta {
@@ -515,6 +517,10 @@ html[data-theme="light"] .header {
   padding: 1.3rem;
   position: relative;
   overflow: hidden;
+  background: rgba(10, 18, 40, 0.82);
+  border: 1px solid rgba(147, 197, 253, 0.28);
+  opacity: 1 !important;
+  transform: none !important;
 }
 
 .skill-card::before {
@@ -528,6 +534,13 @@ html[data-theme="light"] .header {
   -webkit-mask: linear-gradient(#000 0 0) content-box, linear-gradient(#000 0 0);
   mask-composite: exclude;
   -webkit-mask-composite: xor;
+  z-index: 0;
+  pointer-events: none;
+}
+
+.skill-card > * {
+  position: relative;
+  z-index: 1;
 }
 
 .skill-card h3 {
@@ -538,6 +551,32 @@ html[data-theme="light"] .header {
   color: var(--text-muted);
   font-size: 0.95rem;
   margin: 0.55rem 0 1rem;
+}
+
+.skill-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.4rem;
+  margin-bottom: 0.9rem;
+}
+
+.skill-tags span {
+  font-size: 0.76rem;
+  padding: 0.25rem 0.55rem;
+  border-radius: 999px;
+  border: 1px solid rgba(147, 197, 253, 0.35);
+  background: rgba(15, 32, 72, 0.6);
+  color: #dbeafe;
+}
+
+@supports not ((mask-composite: exclude) or (-webkit-mask-composite: xor)) {
+  .skill-card::before {
+    display: none;
+  }
+
+  .skill-card {
+    border: 1px solid rgba(127, 123, 255, 0.45);
+  }
 }
 
 .progress {
@@ -594,6 +633,9 @@ html[data-theme="light"] .header {
   padding: 1rem;
   transform-style: preserve-3d;
   transition: transform 220ms ease;
+  background: rgba(10, 18, 40, 0.82);
+  border: 1px solid rgba(147, 197, 253, 0.28);
+  opacity: 1 !important;
 }
 
 .project-card__banner {
@@ -677,6 +719,10 @@ html[data-theme="light"] .header {
 
 .edu-card {
   padding: 1.4rem;
+  background: rgba(10, 18, 40, 0.82);
+  border: 1px solid rgba(147, 197, 253, 0.28);
+  opacity: 1 !important;
+  transform: none !important;
 }
 
 .edu-card h3 {

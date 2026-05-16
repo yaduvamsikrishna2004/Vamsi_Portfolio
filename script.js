@@ -340,11 +340,18 @@ window.addEventListener("resize", () => {
 });
 
 // AOS and GSAP animations
-AOS.init({
-  once: true,
-  duration: 850,
-  easing: "ease-out-cubic"
-});
+if (window.AOS) {
+  AOS.init({
+    once: true,
+    duration: 850,
+    easing: "ease-out-cubic"
+  });
+} else {
+  document.querySelectorAll("[data-aos]").forEach((el) => {
+    el.style.opacity = "1";
+    el.style.transform = "none";
+  });
+}
 
 if (window.gsap) {
   gsap.registerPlugin(ScrollTrigger);
@@ -375,7 +382,7 @@ if (window.gsap) {
     ease: "sine.inOut"
   });
 
-  gsap.utils.toArray(".skill-card, .project-card, .timeline-item, .edu-card").forEach((item) => {
+  gsap.utils.toArray(".skill-card, .project-card").forEach((item) => {
     gsap.from(item, {
       scrollTrigger: {
         trigger: item,

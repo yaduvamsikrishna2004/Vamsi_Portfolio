@@ -35,7 +35,6 @@
     <nav class="nav container" aria-label="Primary">
       <a class="brand" href="#home" aria-label="Go to home section">
         <span class="brand__dot"></span>
-        Yadu Vamsi Krishna
       </a>
 
       <button class="nav-toggle" id="navToggle" aria-label="Open navigation menu" aria-expanded="false" aria-controls="navMenu">
@@ -47,7 +46,6 @@
         <a href="#about" class="nav-link">About</a>
         <a href="#skills" class="nav-link">Skills</a>
         <a href="#projects" class="nav-link">Projects</a>
-        <a href="#experience" class="nav-link">Experience</a>
         <a href="#education" class="nav-link">Education</a>
         <a href="#contact" class="nav-link">Contact</a>
       </div>
@@ -68,6 +66,7 @@
         <div class="hero__text" data-aos="fade-right" data-aos-duration="900">
           <p class="eyebrow">Integrated M.Tech Software Engineering Student</p>
           <h1>
+            <span class="hero-title-name">Yadu Vamsi Krishna</span>
             Software Engineer &
             <span class="gradient-text">AI Developer</span>
           </h1>
@@ -77,8 +76,6 @@
           <p class="hero__subheading">
             Building scalable applications, AI-powered solutions, and modern web experiences.
           </p>
-          <h2 class="hero__name">Yadu Vamsi Krishna</h2>
-
           <div class="hero__cta">
             <a href="#projects" class="btn btn--primary">View Projects</a>
             <a href="assets/Yadu-Vamsi-Krishna-Resume.pdf" class="btn btn--secondary" download>Download Resume</a>
@@ -99,7 +96,7 @@
 
     <section class="about section" id="about">
       <div class="container">
-        <div class="section-heading" data-aos="fade-up">
+        <div class="section-heading">
           <p class="section-kicker">About</p>
           <h2>Engineering Ideas Into Impactful Software</h2>
         </div>
@@ -138,40 +135,58 @@
 
     <section class="skills section" id="skills">
       <div class="container">
-        <div class="section-heading" data-aos="fade-up">
+        <div class="section-heading">
           <p class="section-kicker">Skills</p>
           <h2>Technical Capabilities Across the Stack</h2>
         </div>
 
         <div class="skills__grid">
-          <article class="glass-card skill-card" data-aos="fade-up">
+          <article class="glass-card skill-card">
             <h3>Languages</h3>
             <p>Java, Python, C++, JavaScript, SQL</p>
+            <div class="skill-tags">
+              <span>Java</span><span>Python</span><span>C++</span><span>JavaScript</span><span>SQL</span>
+            </div>
             <div class="progress"><span style="--value: 92%"></span></div>
           </article>
-          <article class="glass-card skill-card" data-aos="fade-up" data-aos-delay="80">
+          <article class="glass-card skill-card">
             <h3>Frontend</h3>
-            <p>HTML5, CSS3, JavaScript, Responsive UI, A11y</p>
+            <p>HTML5, CSS3, JavaScript, Responsive UI</p>
+            <div class="skill-tags">
+              <span>HTML5</span><span>CSS3</span><span>JS</span><span>Responsive</span>
+            </div>
             <div class="progress"><span style="--value: 90%"></span></div>
           </article>
-          <article class="glass-card skill-card" data-aos="fade-up" data-aos-delay="120">
+          <article class="glass-card skill-card">
             <h3>Backend</h3>
             <p>Flask, Spring Boot, REST APIs, JWT Auth</p>
+            <div class="skill-tags">
+              <span>Flask</span><span>Spring Boot</span><span>REST API</span><span>JWT</span>
+            </div>
             <div class="progress"><span style="--value: 86%"></span></div>
           </article>
-          <article class="glass-card skill-card" data-aos="fade-up" data-aos-delay="160">
+          <article class="glass-card skill-card">
             <h3>AI/ML</h3>
             <p>TensorFlow, Keras, NLP, Machine Learning, OpenCV</p>
+            <div class="skill-tags">
+              <span>TensorFlow</span><span>Keras</span><span>NLP</span><span>ML</span><span>OpenCV</span>
+            </div>
             <div class="progress"><span style="--value: 88%"></span></div>
           </article>
-          <article class="glass-card skill-card" data-aos="fade-up" data-aos-delay="200">
+          <article class="glass-card skill-card">
             <h3>Databases</h3>
             <p>MongoDB, Firebase, MySQL</p>
+            <div class="skill-tags">
+              <span>MongoDB</span><span>Firebase</span><span>MySQL</span>
+            </div>
             <div class="progress"><span style="--value: 82%"></span></div>
           </article>
-          <article class="glass-card skill-card" data-aos="fade-up" data-aos-delay="240">
+          <article class="glass-card skill-card">
             <h3>Tools & Core Subjects</h3>
             <p>Git, GitHub, Networking, OS, DBMS, CN, OOPS</p>
+            <div class="skill-tags">
+              <span>Git</span><span>GitHub</span><span>Networking</span><span>DBMS</span><span>OOPS</span>
+            </div>
             <div class="progress"><span style="--value: 87%"></span></div>
           </article>
         </div>
@@ -180,12 +195,12 @@
 
     <section class="projects section" id="projects">
       <div class="container">
-        <div class="section-heading" data-aos="fade-up">
+        <div class="section-heading">
           <p class="section-kicker">Projects</p>
           <h2>Flagship Builds & AI Product Experiments</h2>
         </div>
 
-        <div class="project-filter" data-aos="fade-up" data-aos-delay="80">
+        <div class="project-filter">
           <button class="filter-btn active" data-filter="all">All</button>
           <button class="filter-btn" data-filter="ai">AI/ML</button>
           <button class="filter-btn" data-filter="web">Web Apps</button>
@@ -193,7 +208,7 @@
         </div>
 
         <div class="projects__grid" id="projectsGrid">
-          <article class="glass-card project-card" data-category="ai web" data-aos="fade-up">
+          <article class="glass-card project-card" data-category="ai web">
             <img src="assets/images/project-resume-screening.svg" alt="Resume Screening Web Application banner" loading="lazy" class="project-card__banner" />
             <h3>Resume Screening Web Application</h3>
             <p class="project-tech">Python, Flask, NLP, ML, MongoDB</p>
@@ -209,7 +224,7 @@
             </div>
           </article>
 
-          <article class="glass-card project-card" data-category="ai web" data-aos="fade-up" data-aos-delay="90">
+          <article class="glass-card project-card" data-category="ai web">
             <img src="assets/images/project-ai-mentor.svg" alt="AI Resume Mentor and Skill Gap Analyzer banner" loading="lazy" class="project-card__banner" />
             <h3>AI Resume Mentor & Skill Gap Analyzer</h3>
             <p class="project-tech">React, Flask, Gemini API, NLP</p>
@@ -225,7 +240,7 @@
             </div>
           </article>
 
-          <article class="glass-card project-card" data-category="ai cv" data-aos="fade-up" data-aos-delay="140">
+          <article class="glass-card project-card" data-category="ai cv">
             <img src="assets/images/project-pothole-cnn.svg" alt="Pothole Detection Using CNN banner" loading="lazy" class="project-card__banner" />
             <h3>Pothole Detection Using CNN</h3>
             <p class="project-tech">TensorFlow, Keras, OpenCV</p>
@@ -241,7 +256,7 @@
             </div>
           </article>
 
-          <article class="glass-card project-card" data-category="ai web" data-aos="fade-up" data-aos-delay="190">
+          <article class="glass-card project-card" data-category="ai web">
             <img src="assets/images/project-bugrocket.svg" alt="BugRocket AI Bug Smashing Agent banner" loading="lazy" class="project-card__banner" />
             <h3>BugRocket AI Bug Smashing Agent</h3>
             <p class="project-tech">React, Gemini API, JavaScript</p>
@@ -260,38 +275,6 @@
       </div>
     </section>
 
-    <section class="experience section" id="experience">
-      <div class="container">
-        <div class="section-heading" data-aos="fade-up">
-          <p class="section-kicker">Experience & Certifications</p>
-          <h2>Proof of Continuous Learning</h2>
-        </div>
-
-        <div class="timeline">
-          <article class="timeline-item glass-card" data-aos="fade-left">
-            <h3>AWS Cloud Quest Cloud Practitioner</h3>
-            <p>Hands-on cloud fundamentals, architecture concepts, and practical problem-solving in AWS environments.</p>
-          </article>
-          <article class="timeline-item glass-card" data-aos="fade-left" data-aos-delay="80">
-            <h3>AWS Educate Certifications</h3>
-            <p>Foundation-level cloud learning pathway focused on deployment patterns and cloud-native thinking.</p>
-          </article>
-          <article class="timeline-item glass-card" data-aos="fade-left" data-aos-delay="130">
-            <h3>Career Essentials in Generative AI</h3>
-            <p>Applied exposure to modern GenAI workflows, prompt engineering, and responsible AI practices.</p>
-          </article>
-          <article class="timeline-item glass-card" data-aos="fade-left" data-aos-delay="180">
-            <h3>Python Internship</h3>
-            <p>Delivered Python-based application logic and practical problem-solving across real project scenarios.</p>
-          </article>
-          <article class="timeline-item glass-card" data-aos="fade-left" data-aos-delay="230">
-            <h3>ISRO START Programme</h3>
-            <p>Explored space technology concepts, scientific workflows, and discipline-driven engineering problem solving.</p>
-          </article>
-        </div>
-      </div>
-    </section>
-
     <section class="education section" id="education">
       <div class="container">
         <div class="section-heading" data-aos="fade-up">
@@ -300,16 +283,17 @@
         </div>
 
         <div class="education__grid">
-          <article class="glass-card edu-card" data-aos="zoom-in">
+          <article class="glass-card edu-card">
             <h3>VIT Andhra Pradesh</h3>
             <p>Integrated M.Tech Software Engineering</p>
             <p>2022 - 2027</p>
             <p class="edu-highlight">CGPA: 8.51</p>
           </article>
-          <article class="glass-card edu-card" data-aos="zoom-in" data-aos-delay="120">
+          <article class="glass-card edu-card">
             <h3>Sri Chaitanya PU College</h3>
-            <p>Pre-University Education</p>
-            <p>Core Science & Mathematics Foundation</p>
+            <p>Pre-University Education (Class 12) - PCMCS</p>
+            <p>2020 - 2022</p>
+            <p class="edu-highlight">Percentage: 82.1%</p>
           </article>
         </div>
       </div>
@@ -322,8 +306,8 @@
           <h2>Let's Build Something Impactful</h2>
           <p>Available for internships, collaborations, and ambitious software projects.</p>
           <div class="contact-links">
-            <a href="mailto:yaduvamsi@example.com">yaduvamsi@example.com</a>
-            <a href="tel:+919999999999">+91 99999 99999</a>
+            <a href="mailto:yaduvamsikrishna@gmail.com">yaduvamsikrishna@gmail.com</a>
+            <a href="tel:+91 8073311917">+91 8073311917</a>
             <a href="https://github.com" target="_blank" rel="noreferrer">GitHub</a>
             <a href="https://linkedin.com" target="_blank" rel="noreferrer">LinkedIn</a>
           </div>
@@ -377,4 +361,3 @@
   <script src="script.js"></script>
 </body>
 </html>
-
