@@ -1,0 +1,380 @@
+﻿<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Yadu Vamsi Krishna | Software Engineer & AI Developer Portfolio showcasing premium projects, skills, certifications, and contact details." />
+  <meta name="keywords" content="Yadu Vamsi Krishna, software engineer portfolio, AI developer, full stack developer, VIT Andhra Pradesh" />
+  <meta name="author" content="Yadu Vamsi Krishna" />
+  <meta property="og:title" content="Yadu Vamsi Krishna | Software Engineer & AI Developer" />
+  <meta property="og:description" content="Building scalable applications, AI-powered solutions, and modern web experiences." />
+  <meta property="og:type" content="website" />
+  <meta property="og:image" content="assets/images/og-preview.svg" />
+  <title>Yadu Vamsi Krishna | Software Engineer & AI Developer</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Poppins:wght@400;500;600;700;800&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="loader" id="loader" aria-live="polite" aria-label="Loading portfolio">
+    <div class="loader__ring"></div>
+    <p class="loader__text">Launching Experience</p>
+  </div>
+
+  <div class="scroll-progress" id="scrollProgress" aria-hidden="true"></div>
+  <div class="cursor-dot" id="cursorDot" aria-hidden="true"></div>
+  <div class="cursor-outline" id="cursorOutline" aria-hidden="true"></div>
+  <div class="mouse-glow" id="mouseGlow" aria-hidden="true"></div>
+
+  <canvas id="particleCanvas" class="particle-canvas" aria-hidden="true"></canvas>
+
+  <header class="header" id="header">
+    <nav class="nav container" aria-label="Primary">
+      <a class="brand" href="#home" aria-label="Go to home section">
+        <span class="brand__dot"></span>
+        Yadu Vamsi Krishna
+      </a>
+
+      <button class="nav-toggle" id="navToggle" aria-label="Open navigation menu" aria-expanded="false" aria-controls="navMenu">
+        <span></span><span></span><span></span>
+      </button>
+
+      <div class="nav-menu" id="navMenu">
+        <a href="#home" class="nav-link active">Home</a>
+        <a href="#about" class="nav-link">About</a>
+        <a href="#skills" class="nav-link">Skills</a>
+        <a href="#projects" class="nav-link">Projects</a>
+        <a href="#experience" class="nav-link">Experience</a>
+        <a href="#education" class="nav-link">Education</a>
+        <a href="#contact" class="nav-link">Contact</a>
+      </div>
+
+      <button class="theme-toggle" id="themeToggle" aria-label="Toggle theme">
+        <span class="theme-toggle__icon">TH</span>
+      </button>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero section" id="home">
+      <div class="hero__bg-blur hero__bg-blur--one"></div>
+      <div class="hero__bg-blur hero__bg-blur--two"></div>
+      <div class="hero__bg-grid"></div>
+
+      <div class="container hero__content">
+        <div class="hero__text" data-aos="fade-right" data-aos-duration="900">
+          <p class="eyebrow">Integrated M.Tech Software Engineering Student</p>
+          <h1>
+            Software Engineer &
+            <span class="gradient-text">AI Developer</span>
+          </h1>
+          <p class="typing-line">
+            <span id="typingText"></span><span class="caret" aria-hidden="true">|</span>
+          </p>
+          <p class="hero__subheading">
+            Building scalable applications, AI-powered solutions, and modern web experiences.
+          </p>
+          <h2 class="hero__name">Yadu Vamsi Krishna</h2>
+
+          <div class="hero__cta">
+            <a href="#projects" class="btn btn--primary">View Projects</a>
+            <a href="assets/Yadu-Vamsi-Krishna-Resume.pdf" class="btn btn--secondary" download>Download Resume</a>
+            <a href="#contact" class="btn btn--ghost">Contact Me</a>
+          </div>
+        </div>
+
+        <div class="hero__visual" data-aos="zoom-in" data-aos-duration="1100">
+          <div class="visual-card parallax-layer" data-speed="0.08">
+            <img src="assets/images/developer-visual.svg" alt="Futuristic developer illustration" loading="lazy" />
+          </div>
+          <div class="floating-chip floating-chip--one">Full Stack</div>
+          <div class="floating-chip floating-chip--two">AI/ML</div>
+          <div class="floating-chip floating-chip--three">Scalable Systems</div>
+        </div>
+      </div>
+    </section>
+
+    <section class="about section" id="about">
+      <div class="container">
+        <div class="section-heading" data-aos="fade-up">
+          <p class="section-kicker">About</p>
+          <h2>Engineering Ideas Into Impactful Software</h2>
+        </div>
+
+        <div class="about__grid">
+          <article class="glass-card about__intro" data-aos="fade-up" data-aos-delay="50">
+            <p>
+              I am an Integrated M.Tech Software Engineering student at VIT Andhra Pradesh, focused on crafting reliable software products that blend performance, intelligence, and user-first design.
+            </p>
+            <p>
+              My core interests include Full Stack Development, AI/ML, Networking, scalable system architecture, and building real-world solutions that solve meaningful problems.
+            </p>
+          </article>
+
+          <div class="about__stats">
+            <article class="glass-card stat-card" data-aos="fade-up" data-aos-delay="100">
+              <h3 class="counter" data-target="8.51">0</h3>
+              <p>CGPA</p>
+            </article>
+            <article class="glass-card stat-card" data-aos="fade-up" data-aos-delay="180">
+              <h3 class="counter" data-target="4">0</h3>
+              <p>Major Projects</p>
+            </article>
+            <article class="glass-card stat-card" data-aos="fade-up" data-aos-delay="260">
+              <h3 class="counter" data-target="10">0</h3>
+              <p>Certifications</p>
+            </article>
+            <article class="glass-card stat-card" data-aos="fade-up" data-aos-delay="340">
+              <h3>VIT-AP</h3>
+              <p>2022 - 2027</p>
+            </article>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="skills section" id="skills">
+      <div class="container">
+        <div class="section-heading" data-aos="fade-up">
+          <p class="section-kicker">Skills</p>
+          <h2>Technical Capabilities Across the Stack</h2>
+        </div>
+
+        <div class="skills__grid">
+          <article class="glass-card skill-card" data-aos="fade-up">
+            <h3>Languages</h3>
+            <p>Java, Python, C++, JavaScript, SQL</p>
+            <div class="progress"><span style="--value: 92%"></span></div>
+          </article>
+          <article class="glass-card skill-card" data-aos="fade-up" data-aos-delay="80">
+            <h3>Frontend</h3>
+            <p>HTML5, CSS3, JavaScript, Responsive UI, A11y</p>
+            <div class="progress"><span style="--value: 90%"></span></div>
+          </article>
+          <article class="glass-card skill-card" data-aos="fade-up" data-aos-delay="120">
+            <h3>Backend</h3>
+            <p>Flask, Spring Boot, REST APIs, JWT Auth</p>
+            <div class="progress"><span style="--value: 86%"></span></div>
+          </article>
+          <article class="glass-card skill-card" data-aos="fade-up" data-aos-delay="160">
+            <h3>AI/ML</h3>
+            <p>TensorFlow, Keras, NLP, Machine Learning, OpenCV</p>
+            <div class="progress"><span style="--value: 88%"></span></div>
+          </article>
+          <article class="glass-card skill-card" data-aos="fade-up" data-aos-delay="200">
+            <h3>Databases</h3>
+            <p>MongoDB, Firebase, MySQL</p>
+            <div class="progress"><span style="--value: 82%"></span></div>
+          </article>
+          <article class="glass-card skill-card" data-aos="fade-up" data-aos-delay="240">
+            <h3>Tools & Core Subjects</h3>
+            <p>Git, GitHub, Networking, OS, DBMS, CN, OOPS</p>
+            <div class="progress"><span style="--value: 87%"></span></div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="projects section" id="projects">
+      <div class="container">
+        <div class="section-heading" data-aos="fade-up">
+          <p class="section-kicker">Projects</p>
+          <h2>Flagship Builds & AI Product Experiments</h2>
+        </div>
+
+        <div class="project-filter" data-aos="fade-up" data-aos-delay="80">
+          <button class="filter-btn active" data-filter="all">All</button>
+          <button class="filter-btn" data-filter="ai">AI/ML</button>
+          <button class="filter-btn" data-filter="web">Web Apps</button>
+          <button class="filter-btn" data-filter="cv">Computer Vision</button>
+        </div>
+
+        <div class="projects__grid" id="projectsGrid">
+          <article class="glass-card project-card" data-category="ai web" data-aos="fade-up">
+            <img src="assets/images/project-resume-screening.svg" alt="Resume Screening Web Application banner" loading="lazy" class="project-card__banner" />
+            <h3>Resume Screening Web Application</h3>
+            <p class="project-tech">Python, Flask, NLP, ML, MongoDB</p>
+            <p>Intelligent resume parsing and screening system with automated ranking and keyword-based candidate insights.</p>
+            <ul>
+              <li>Resume parsing with NLP pipeline</li>
+              <li>Role-match scoring model</li>
+              <li>Data persistence with MongoDB</li>
+            </ul>
+            <div class="project-actions">
+              <a href="https://github.com" target="_blank" rel="noreferrer" class="btn btn--ghost">GitHub</a>
+              <a href="#" class="btn btn--primary">Live Demo</a>
+            </div>
+          </article>
+
+          <article class="glass-card project-card" data-category="ai web" data-aos="fade-up" data-aos-delay="90">
+            <img src="assets/images/project-ai-mentor.svg" alt="AI Resume Mentor and Skill Gap Analyzer banner" loading="lazy" class="project-card__banner" />
+            <h3>AI Resume Mentor & Skill Gap Analyzer</h3>
+            <p class="project-tech">React, Flask, Gemini API, NLP</p>
+            <p>Guides candidates with personalized improvement plans, semantic feedback, and actionable recommendations.</p>
+            <ul>
+              <li>LLM-powered mentoring assistant</li>
+              <li>Skill gap analysis dashboard</li>
+              <li>Custom learning path suggestions</li>
+            </ul>
+            <div class="project-actions">
+              <a href="https://github.com" target="_blank" rel="noreferrer" class="btn btn--ghost">GitHub</a>
+              <a href="#" class="btn btn--primary">Live Demo</a>
+            </div>
+          </article>
+
+          <article class="glass-card project-card" data-category="ai cv" data-aos="fade-up" data-aos-delay="140">
+            <img src="assets/images/project-pothole-cnn.svg" alt="Pothole Detection Using CNN banner" loading="lazy" class="project-card__banner" />
+            <h3>Pothole Detection Using CNN</h3>
+            <p class="project-tech">TensorFlow, Keras, OpenCV</p>
+            <p>Computer vision system trained to detect potholes in road imagery for faster maintenance reporting and safer roads.</p>
+            <ul>
+              <li>CNN model training & validation</li>
+              <li>Real-time inference pipeline</li>
+              <li>Visual detection overlays</li>
+            </ul>
+            <div class="project-actions">
+              <a href="https://github.com" target="_blank" rel="noreferrer" class="btn btn--ghost">GitHub</a>
+              <a href="#" class="btn btn--primary">Live Demo</a>
+            </div>
+          </article>
+
+          <article class="glass-card project-card" data-category="ai web" data-aos="fade-up" data-aos-delay="190">
+            <img src="assets/images/project-bugrocket.svg" alt="BugRocket AI Bug Smashing Agent banner" loading="lazy" class="project-card__banner" />
+            <h3>BugRocket AI Bug Smashing Agent</h3>
+            <p class="project-tech">React, Gemini API, JavaScript</p>
+            <p>AI-assisted debugging experience that analyzes issues, suggests fixes, and speeds up triage workflows for teams.</p>
+            <ul>
+              <li>Prompt-driven bug diagnosis</li>
+              <li>Frontend issue reproduction notes</li>
+              <li>Actionable code-fix suggestions</li>
+            </ul>
+            <div class="project-actions">
+              <a href="https://github.com" target="_blank" rel="noreferrer" class="btn btn--ghost">GitHub</a>
+              <a href="#" class="btn btn--primary">Live Demo</a>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="experience section" id="experience">
+      <div class="container">
+        <div class="section-heading" data-aos="fade-up">
+          <p class="section-kicker">Experience & Certifications</p>
+          <h2>Proof of Continuous Learning</h2>
+        </div>
+
+        <div class="timeline">
+          <article class="timeline-item glass-card" data-aos="fade-left">
+            <h3>AWS Cloud Quest Cloud Practitioner</h3>
+            <p>Hands-on cloud fundamentals, architecture concepts, and practical problem-solving in AWS environments.</p>
+          </article>
+          <article class="timeline-item glass-card" data-aos="fade-left" data-aos-delay="80">
+            <h3>AWS Educate Certifications</h3>
+            <p>Foundation-level cloud learning pathway focused on deployment patterns and cloud-native thinking.</p>
+          </article>
+          <article class="timeline-item glass-card" data-aos="fade-left" data-aos-delay="130">
+            <h3>Career Essentials in Generative AI</h3>
+            <p>Applied exposure to modern GenAI workflows, prompt engineering, and responsible AI practices.</p>
+          </article>
+          <article class="timeline-item glass-card" data-aos="fade-left" data-aos-delay="180">
+            <h3>Python Internship</h3>
+            <p>Delivered Python-based application logic and practical problem-solving across real project scenarios.</p>
+          </article>
+          <article class="timeline-item glass-card" data-aos="fade-left" data-aos-delay="230">
+            <h3>ISRO START Programme</h3>
+            <p>Explored space technology concepts, scientific workflows, and discipline-driven engineering problem solving.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="education section" id="education">
+      <div class="container">
+        <div class="section-heading" data-aos="fade-up">
+          <p class="section-kicker">Education</p>
+          <h2>Academic Foundation</h2>
+        </div>
+
+        <div class="education__grid">
+          <article class="glass-card edu-card" data-aos="zoom-in">
+            <h3>VIT Andhra Pradesh</h3>
+            <p>Integrated M.Tech Software Engineering</p>
+            <p>2022 - 2027</p>
+            <p class="edu-highlight">CGPA: 8.51</p>
+          </article>
+          <article class="glass-card edu-card" data-aos="zoom-in" data-aos-delay="120">
+            <h3>Sri Chaitanya PU College</h3>
+            <p>Pre-University Education</p>
+            <p>Core Science & Mathematics Foundation</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="contact section" id="contact">
+      <div class="container contact__grid">
+        <div class="contact__intro" data-aos="fade-right">
+          <p class="section-kicker">Contact</p>
+          <h2>Let's Build Something Impactful</h2>
+          <p>Available for internships, collaborations, and ambitious software projects.</p>
+          <div class="contact-links">
+            <a href="mailto:yaduvamsi@example.com">yaduvamsi@example.com</a>
+            <a href="tel:+919999999999">+91 99999 99999</a>
+            <a href="https://github.com" target="_blank" rel="noreferrer">GitHub</a>
+            <a href="https://linkedin.com" target="_blank" rel="noreferrer">LinkedIn</a>
+          </div>
+        </div>
+
+        <form class="glass-card contact-form" id="contactForm" data-aos="fade-left" novalidate>
+          <div class="field">
+            <input type="text" id="name" name="name" placeholder=" " required />
+            <label for="name">Your Name</label>
+            <small class="error"></small>
+          </div>
+          <div class="field">
+            <input type="email" id="email" name="email" placeholder=" " required />
+            <label for="email">Email Address</label>
+            <small class="error"></small>
+          </div>
+          <div class="field">
+            <input type="text" id="subject" name="subject" placeholder=" " required />
+            <label for="subject">Subject</label>
+            <small class="error"></small>
+          </div>
+          <div class="field">
+            <textarea id="message" name="message" rows="4" placeholder=" " required></textarea>
+            <label for="message">Message</label>
+            <small class="error"></small>
+          </div>
+          <button type="submit" class="btn btn--primary btn--full">Send Message</button>
+          <p id="formStatus" class="form-status" aria-live="polite"></p>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <button class="back-to-top" id="backToTop" aria-label="Back to top">^</button>
+
+  <footer class="footer">
+    <div class="footer__glow"></div>
+    <div class="container footer__content">
+      <p>(c) <span id="year"></span> Yadu Vamsi Krishna. All rights reserved.</p>
+      <div class="footer__links">
+        <a href="#home">Home</a>
+        <a href="#projects">Projects</a>
+        <a href="#contact">Contact</a>
+      </div>
+    </div>
+  </footer>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.13.0/gsap.min.js" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.13.0/ScrollTrigger.min.js" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+  <script src="script.js"></script>
+</body>
+</html>
+
